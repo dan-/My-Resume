@@ -2,35 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>>IS ANYONE THERE?</title>
+	<title>DanielFontana.com</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<?php 
-		if(file_exists("count.dat")) {
-			$exist_file = fopen("count.dat", "r");
-			$new_count = fgets($exist_file, 255);
-			$new_count++;
-			fclose($exist_file);
-			// to be invisible counter comment out next line;
-			//print("You're visitor #$new_count.");
-			$exist_count = fopen("count.dat", "w");
-			fputs($exist_count, $new_count);
-			fclose($exist_count); }
-		else {
-			$new_file = fopen("count.dat", "w");
-			fputs($new_file, "1");
-			fclose($new_file); }
-	?>
 	<h1 id="header">【=◈︿◈=】</h1>
-	                                   
-	<p id="console">
-    	<span>></span>
-    	<span id="msg"></span>
-    	<span id="cursor">|</span>
-	</p>
 </body>
 </html>

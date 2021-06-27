@@ -1,20 +1,17 @@
 body {
 	background-color: black;
 	color: white;
-	/*
-	Middle circle color: 121113 
-	Border color : 030203
-	*/
 }
 
 #header {
-    font-size: 15vw;
+    font-size: 20vw;
     text-align: center;
     margin-top: 50px;
     padding: 0;
 }
 
 #header:hover {
+
 }
 
 #console {
