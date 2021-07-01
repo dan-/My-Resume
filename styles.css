@@ -1,70 +1,62 @@
 body {
-	margin: 0;
-	padding: 0;
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:10em;
 }
 
-.outer {
+.nav {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header {
     display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 50%;
+    padding-left: 100px;
     background-color: gray;
 }
 
-.middle {
-    display: table-cell;
+
+.contant {
+    display: table;
+    position: relative;
+    height: 20%;
+    width: 100%;
+    background-color: blue;
 }
 
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 1000px;
-    height: 500px;
-    background-color: black;
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
-#header {
-	background-color: red;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-#header:hover {
-
-}
-
-#console {
-
-}
-
-h1 {
-	color: white;
-	text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-
-a:link, a:visited {
-    display: block;
-    width: 100px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: purple;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-a:hover {
-	background-color: white;
-	color: black;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
